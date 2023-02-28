@@ -1,15 +1,12 @@
 <script setup>
 
-import PrimaryButton from '@/Components/PrimaryButton.vue';
+
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import TextInput from '@/Components/TextInput.vue'
+
 import AddEmployeeForm from "@/Custom/Partials/AddEmployeeForm.vue";
 
-const props = defineProps({
-    employees: Object,
 
-})
 
 </script>
 
@@ -40,15 +37,7 @@ const props = defineProps({
                         </tr>
                         </thead>
                         <tbody>
-                        <tr v-for="employee in employees" class="border">
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.id}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.name}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.job_title}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.manager}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.office}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.created_at}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.updated_at}}</td>
-                        </tr>
+
                         </tbody>
                     </table>
                 </div>

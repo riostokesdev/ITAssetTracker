@@ -51,56 +51,64 @@ const submit = () => {
 
     <Modal :show="AddEmployeeConfirmation" @close="closeModal">
         <form @submit.prevent="submit" class="p-4 space-y-6">
-            <InputLabel for="name" value="Name"/>
 
-            <TextInput
-                id="name"
-                typeof="text"
-                class="mt-1 block w-3/4"
-                v-model="form.name"
-                required
-                autofocus
-                autocomplete="name"
-            />
+            <div class="mt-4">
+                <InputLabel for="name" value="Name"/>
 
-
-
-            <InputLabel for="job_title" value="Job Title"/>
-
-            <TextInput
-                id="job_title"
-                typeof="text"
-                class="mt-1 block w-full"
-                v-model="form.job_title"
-                required
-                autofocus
-                autocomplete="job_title"
-            />
-
-            <InputLabel for="manager" value="Manager"/>
-
-            <TextInput
-                id="manager"
-                typeof="text"
-                class="mt-1 block w-full"
-                v-model="form.manager"
-                required
-                autofocus
-                autcomplete="manager"
-            />
+                <TextInput
+                    id="name"
+                    typeof="text"
+                    class="mt-1 block w-3/4"
+                    v-model="form.name"
+                    required
+                    autofocus
+                    autocomplete="off"
+                />
+            </div>
 
 
-            <InputLabel for="office" value="Office"/>
+            <div class="mt-4">
+                <InputLabel for="job_title" value="Job Title"/>
 
-            <TextInput
-                id="office"
-                typeof="text"
-                class="mt-1 block w-full"
-                v-model="form.office"
-                required
-                autofocus
-                autocomplete="office"
-            />
+                <TextInput
+                    id="job_title"
+                    typeof="text"
+                    class="mt-1 block w-full"
+                    v-model="form.job_title"
+                    required
+                    autofocus
+                    autocomplete="off"
+                />
+            </div>
+
+            <div class="mt-4">
+                <InputLabel for="manager" value="Manager"/>
+
+                <TextInput
+                    id="manager"
+                    typeof="text"
+                    class="mt-1 block w-full"
+                    v-model="form.manager"
+                    required
+                    autofocus
+                    autocomplete="off"
+                />
+            </div>
+
+
+            <div class="mt-4">
+                <InputLabel for="office" value="Office"/>
+
+                <TextInput
+                    id="office"
+                    typeof="text"
+                    class="mt-1 block w-full"
+                    v-model="form.office"
+                    required
+                    autofocus
+                    autocomplete="off"
+                />
+            </div>
 
 
             <div class="flex items-center gap-4">

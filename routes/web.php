@@ -38,6 +38,8 @@ Route::middleware('auth')->group(function () {
 
 
 Route::post('/dashboard', [EmployeeController::class, 'createEmployee'])->name('createEmployee');
+Route::get('/dashboard', [EmployeeController::class, 'fetchEmployee'])->name('dashboard');
+
 
 
 
