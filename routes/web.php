@@ -40,7 +40,8 @@ Route::middleware('auth')->group(function () {
 Route::post('/dashboard', [EmployeeController::class, 'createEmployee'])->name('createEmployee');
 Route::get('/dashboard', [EmployeeController::class, 'fetchEmployee'])->name('dashboard');
 
-
-
+Route::get('/assets', function () {
+    return Inertia::render('Assets');
+})->middleware(['auth', 'verified'])->name('assets');
 
 require __DIR__.'/auth.php';
