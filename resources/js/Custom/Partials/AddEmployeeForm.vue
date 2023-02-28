@@ -58,7 +58,7 @@ const submit = () => {
                 <TextInput
                     id="name"
                     typeof="text"
-                    class="mt-1 block w-3/4"
+                    class="mt-1 block w-full"
                     v-model="form.name"
                     required
                     autofocus
@@ -82,32 +82,51 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <InputLabel for="manager" value="Manager"/>
+                <InputLabel for="manager" value="manager"/>
 
-                <TextInput
-                    id="manager"
-                    typeof="text"
-                    class="mt-1 block w-full"
-                    v-model="form.manager"
-                    required
-                    autofocus
-                    autocomplete="off"
-                />
+                <select name="manager" v-model="form.manager">
+                    <option value="">Select Your Option</option>
+                    <option value="Rebbecca Beard">Rebbecca Beard</option>
+                    <option value="Nick Grey">Nick Grey</option>
+                    <option value="Jordan Willis">Jordan Willis</option>
+                    <option value="Jot Walford">Jot Walford</option>
+                    <option value="Hassaan Kassim">Hassaan Kassim</option>
+                    <option value="Kent Cheng">Kent Cheng</option>
+                    <option value="Andy Kent">Andy Kent</option>
+                    <option value="Simon Jarvis ">Simon Jarvis</option>
+                    <option value="Jayne Fitch">Jayne Fitch</option>
+                    <option value="Spencer Pickford">Spencer Pickford</option>
+                    <option value="Nick Hall">Nick Hall</option>
+                </select>
             </div>
 
 
             <div class="mt-4">
-                <InputLabel for="office" value="Office"/>
+                <InputLabel for="office" value="office"/>
 
-                <TextInput
-                    id="office"
-                    typeof="text"
-                    class="mt-1 block w-full"
-                    v-model="form.office"
-                    required
-                    autofocus
-                    autocomplete="off"
-                />
+                <select name="office" v-model="form.office">
+                    <option value="">Select Your Option</option>
+                    <option value="Accounts">Accounts</option>
+                    <option value="Creative">Creative</option>
+                    <option value="Mathmatical">Mathmatical</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Customer Services">Customer Services</option>
+                    <option value="CS Admin">CS Admin</option>
+                    <option value="CS Training">CS Training</option>
+                    <option value="Counter Fraud">Counter Fraud</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Developers">Developers</option>
+                    <option value="MD & CEO">MD & CEO</option>
+                    <option value="Marketing">Marketing / Analysts</option>
+                    <option value="NPD">NPD</option>
+                    <option value="Purchasing">Purchasing</option>
+                    <option value="Quality">Quality</option>
+                    <option value="Resource Planning">Resource Planning</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Department">Department</option>
+                </select>
             </div>
 
 
