@@ -5,6 +5,8 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
 import TextInput from '@/Components/TextInput.vue'
 import AddEmployeeForm from "@/Custom/Partials/AddEmployeeForm.vue";
+import ViewEmployeeButton from '@/Custom/Buttons/ViewEmployee.vue'
+import DangerButton from '@/Components/DangerButton.vue'
 
 const props = defineProps({
     employees: Object,
@@ -37,6 +39,7 @@ const props = defineProps({
                             <th scope="col" class="px-6 py-4 font-medium text-gray-900">Office</th>
                             <th scope="col" class="px-6 py-4 font-medium text-gray-900">Created At</th>
                             <th scope="col" class="px-6 py-4 font-medium text-gray-900">Modified At</th>
+                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Actions</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -48,6 +51,10 @@ const props = defineProps({
                             <td class="px-6 py-4 font-medium text-gray-900">{{employee.office}}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{employee.created_at}}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{employee.updated_at}}</td>
+                            <td class="px-6 py-4 font-medium text-gray-900 inline-flex gap-4">
+                                <ViewEmployeeButton>View</ViewEmployeeButton>
+                                <DangerButton>Delete</DangerButton>
+                            </td>
                         </tr>
                         </tbody>
                     </table>
