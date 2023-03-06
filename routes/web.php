@@ -56,8 +56,10 @@ Route::get('/employee/{id}', [EmployeeInformationController::class, 'index'])->m
 Route::get('/delete/asset/{id}', [EmployeeInformationController::class, 'deleteAsset'])->middleware(['auth', 'verified'])->name('deleteAsset');
 
 Route::get('/employee/delete/{id}', [EmployeeInformationController::class, 'deleteEmployee'])->middleware(['auth', 'verified'])->name('deleteEmployee');
+Route::get('/storeAsset/{id}', [EmployeeInformationController::class, 'storeAsset'])->middleware(['auth', 'verified'])->name('storeAsset');
 
 Route::get('/storage', [StoreRoomController::class, 'fetchStoreRoomAssets'])->middleware(['auth', 'verified'])->name('storeroom');
+
 
 
 

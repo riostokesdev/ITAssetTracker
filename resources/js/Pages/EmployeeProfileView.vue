@@ -120,9 +120,10 @@ const props = defineProps({
                             <td class="px-6 py-4 font-medium text-gray-900">{{asset.created_at}}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{asset.updated_at}}</td>
                             <td class="px-6 py-4 font-medium text-gray-900 inline-flex gap-4">
-                                <a >
+                                <a :href="'/storeAsset/' + asset.id">
                                     <StoreAsset>Store Asset</StoreAsset>
                                 </a>
+
                                 <a :href="'/delete/asset/' + asset.id">
                                     <DangerButton>Delete</DangerButton>
                                 </a>

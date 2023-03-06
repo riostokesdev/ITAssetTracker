@@ -64,5 +64,13 @@ class EmployeeInformationController extends Controller
         return Redirect::route('dashboard');
     }
 
+    public function storeAsset($id)
+    {
+        $asset = Asset::where("id", $id)->update(["employee_id" => "1"]);
+
+       return Redirect::route('storeroom');
+
+    }
+
 
 }
