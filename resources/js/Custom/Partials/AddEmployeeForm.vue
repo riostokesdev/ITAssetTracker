@@ -82,7 +82,7 @@ const submit = () => {
             </div>
 
             <div class="mt-4">
-                <InputLabel for="manager" value="manager"/>
+                <InputLabel for="manager" value="Manager"/>
 
                 <select name="manager" v-model="form.manager">
                     <option value="">Select Your Option</option>
@@ -102,7 +102,7 @@ const submit = () => {
 
 
             <div class="mt-4">
-                <InputLabel for="office" value="office"/>
+                <InputLabel for="office" value="Office"/>
 
                 <select name="office" v-model="form.office">
                     <option value="">Select Your Option</option>

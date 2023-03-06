@@ -49,11 +49,15 @@ const props = defineProps({
                             <td class="px-6 py-4 font-medium text-gray-900">{{employee.job_title}}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{employee.manager}}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{employee.office}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.created_at}}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900">{{employee.updated_at}}</td>
+                            <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(employee.created_at).toLocaleString() }}</td>
+                            <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(employee.updated_at).toLocaleString() }}</td>
                             <td class="px-6 py-4 font-medium text-gray-900 inline-flex gap-4">
-                                <ViewEmployeeButton>View</ViewEmployeeButton>
-                                <DangerButton>Delete</DangerButton>
+                                <a :href="'/employee/' + employee.id">
+                                    <ViewEmployeeButton>View</ViewEmployeeButton>
+                                </a>
+                                <a :href="'/employee/delete/' + employee.id">
+                                    <DangerButton>Delete</DangerButton>
+                                </a>
                             </td>
                         </tr>
                         </tbody>

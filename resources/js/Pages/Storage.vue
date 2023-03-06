@@ -20,7 +20,7 @@ const props = defineProps({
     <AuthenticatedLayout>
         <template #header>
             <div class="flex justify-between">
-                <h2 class="font-semibold text-xl text-gray-800 leading-tight">Assets</h2>
+                <h2 class="font-semibold text-xl text-gray-800 leading-tight">Store Rooom</h2>
             </div>
         </template>
 

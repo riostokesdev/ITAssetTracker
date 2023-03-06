@@ -15,4 +15,9 @@ class Employee extends Model
         'manager',
         'office'
     ];
+
+    public function Assets()
+    {
+        return $this->hasMany(Asset::class);
+    }
 }

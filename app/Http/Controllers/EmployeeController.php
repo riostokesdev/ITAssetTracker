@@ -27,7 +27,7 @@ class EmployeeController extends Controller
 
     public function fetchEmployee()
     {
-        $employees = Employee::all();
+        $employees = Employee::where('id', '>', 1)->get();
 
 
         return Inertia::render('Dashboard',[

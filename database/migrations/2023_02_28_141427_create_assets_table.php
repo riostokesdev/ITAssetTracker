@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('assets', function (Blueprint $table) {
             $table->id();
+            $table->string('asset_name');
+            $table->string('serial_number');
+            $table->unsignedBigInteger('employee_id');
+            $table->foreign('employee_id')->references('id')->on('employees');
+            $table->string('fa_code');
             $table->timestamps();
         });
     }
