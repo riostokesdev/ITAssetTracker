@@ -4,6 +4,7 @@ import GuestLayout from '@/Layouts/GuestLayout.vue';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
+import TestDetailsLabel from '@/Custom/Text/TestDetailsLabel.vue';
 import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
 
@@ -27,11 +28,13 @@ const submit = () => {
 
 <template>
     <GuestLayout>
+
         <Head title="Log in" />
 
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
             {{ status }}
         </div>
+
 
         <form @submit.prevent="submit">
             <div>
@@ -86,5 +89,12 @@ const submit = () => {
                 </PrimaryButton>
             </div>
         </form>
+        <div class="block mt-8">
+            <h1 class="text-center underline font-bold">Test Details</h1>
+            <TestDetailsLabel value="Email: test@test.com" class=""/>
+            <TestDetailsLabel value="Password: Password1"/>
+        </div>
+
+
     </GuestLayout>
 </template>
