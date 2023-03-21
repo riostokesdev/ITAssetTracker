@@ -11,10 +11,11 @@ class StoreRoomController extends Controller
 {
     public function fetchStoreRoomAssets()
     {
+        $employees = Employee::all();
         $assets = Asset::where('employee_id', 1)->get();
-
         return Inertia::render('Storage', [
-            'assets' => $assets
+            'assets' => $assets,
+            'employees' => $employees
         ]);
     }
 }

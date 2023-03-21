@@ -4,6 +4,8 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import DangerButton from '@/Components/DangerButton.vue'
 import { Head } from '@inertiajs/vue3';
+import ViewEmployeeButton from '@/Custom/Buttons/ViewEmployee.vue'
+import ReAssignAssetForm from '@/Custom/Partials/ReAssignAssetForm.vue'
 
 const props = defineProps({
     assets: Object,
@@ -49,7 +51,10 @@ const props = defineProps({
                             <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(asset.created_at).toLocaleString() }}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(asset.updated_at).toLocaleString() }}</td>
                             <td class="px-6 py-4 font-medium text-gray-900 inline-flex gap-4">
-                                <DangerButton>Delete</DangerButton>
+                                <a :href="'/delete/asset/' + asset.id">
+                                    <DangerButton>Delete</DangerButton>
+                                </a>
+                                <ReAssignAssetForm></ReAssignAssetForm>
                             </td>
                         </tr>
                         </tbody>

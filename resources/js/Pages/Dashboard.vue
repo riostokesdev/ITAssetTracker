@@ -32,14 +32,14 @@ const props = defineProps({
                     <table class="w-full border-collapse bg-white text-center text-sm text-gray-500">
                         <thead class="bg-gray-50">
                         <tr class="hover:bg-gray-50">
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">ID</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Name</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Job Title</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Manager</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Office</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Created At</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Modified At</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Actions</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500">ID</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500">Name</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500">Job Title</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500">Manager</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500">Office</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500" >Created At</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500">Modified At</th>
+                            <th scope="col" class="px-6 py-1 font-medium text-gray-900 border-r border-gray-500">Actions</th>
                         </tr>
                         </thead>
                         <tbody>

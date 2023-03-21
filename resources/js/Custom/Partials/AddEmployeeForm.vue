@@ -18,6 +18,10 @@ const form = useForm({
 
 })
 
+const props = defineProps({
+    employees: Object,
+})
+
 
 /*  Start Of Models */
 const AddEmployeeConfirmation = ref(false);
@@ -97,6 +101,7 @@ const submit = () => {
                     <option value="Jayne Fitch">Jayne Fitch</option>
                     <option value="Spencer Pickford">Spencer Pickford</option>
                     <option value="Nick Hall">Nick Hall</option>
+                    <option value="Test Manager">Test Manager</option>
                 </select>
             </div>
 
@@ -125,7 +130,7 @@ const submit = () => {
                     <option value="Resource Planning">Resource Planning</option>
                     <option value="Social Media">Social Media</option>
                     <option value="Technical">Technical</option>
-                    <option value="Department">Department</option>
+                    <option value="Test Department">Test Department</option>
                 </select>
             </div>
 
