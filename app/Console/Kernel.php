@@ -13,9 +13,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
 
-        $schedule->command('migrate:refresh')->hourly();
-        $schedule->command('db:seed --class=StoreRoomSeeder')->hourly();
-        $schedule->command('db:seed --class=TestDetailsSeeder')->hourly();
+        $schedule->command('migrate:refresh')->everyMinute();
+        $schedule->command('db:seed --class=StoreRoomSeeder')->everyMinute();
+        $schedule->command('db:seed --class=TestDetailsSeeder')->everyMinute();
     }
 
     /**
