@@ -37,7 +37,6 @@ const props = defineProps({
                             <th scope="col" class="px-6 py-4 font-medium text-gray-900">fa_code</th>
                             <th scope="col" class="px-6 py-4 font-medium text-gray-900">Created At</th>
                             <th scope="col" class="px-6 py-4 font-medium text-gray-900">Modified At</th>
-                            <th scope="col" class="px-6 py-4 font-medium text-gray-900">Actions</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -49,7 +48,7 @@ const props = defineProps({
                             <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(asset.created_at).toLocaleString() }}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(asset.updated_at).toLocaleString() }}</td>
                             <td class="px-6 py-4 font-medium text-gray-900 inline-flex gap-4">
-                                <DangerButton>Delete</DangerButton>
+
                             </td>
                         </tr>
                         </tbody>
