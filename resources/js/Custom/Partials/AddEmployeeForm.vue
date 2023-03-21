@@ -90,18 +90,16 @@ const submit = () => {
 
                 <select name="manager" v-model="form.manager">
                     <option value="">Select Your Option</option>
-                    <option value="Rebbecca Beard">Rebbecca Beard</option>
-                    <option value="Nick Grey">Nick Grey</option>
-                    <option value="Jordan Willis">Jordan Willis</option>
-                    <option value="Jot Walford">Jot Walford</option>
-                    <option value="Hassaan Kassim">Hassaan Kassim</option>
-                    <option value="Kent Cheng">Kent Cheng</option>
-                    <option value="Andy Kent">Andy Kent</option>
-                    <option value="Simon Jarvis ">Simon Jarvis</option>
-                    <option value="Jayne Fitch">Jayne Fitch</option>
-                    <option value="Spencer Pickford">Spencer Pickford</option>
-                    <option value="Nick Hall">Nick Hall</option>
-                    <option value="Test Manager">Test Manager</option>
+                    <option value="Mackenzie Jefferson">Mackenzie Jefferson</option>
+                    <option value="Finnian Robertson">Finnian Robertson</option>
+                    <option value="Kevin Stafford">Kevin Stafford</option>
+                    <option value="Sion Hudson">Sion Hudson</option>
+                    <option value="Harris Simon">Harris Simon</option>
+                    <option value="Christine Sawyer">Christine Sawyer</option>
+                    <option value="Abdullah Mccormick">Abdullah Mccormick</option>
+                    <option value="Nettie Edwards">Nettie Edwards</option>
+                    <option value="Ty Cohen">Ty Cohen</option>
+                    <option value="Lenny Roth">Spencer Pickford</option>
                 </select>
             </div>
 
@@ -111,26 +109,11 @@ const submit = () => {
 
                 <select name="office" v-model="form.office">
                     <option value="">Select Your Option</option>
-                    <option value="Accounts">Accounts</option>
-                    <option value="Creative">Creative</option>
-                    <option value="Mathmatical">Mathmatical</option>
-                    <option value="Commercial">Commercial</option>
-                    <option value="Customer Services">Customer Services</option>
-                    <option value="CS Admin">CS Admin</option>
-                    <option value="CS Training">CS Training</option>
-                    <option value="Counter Fraud">Counter Fraud</option>
-                    <option value="HR">HR</option>
+                    <option value="Human Resources">Human Resources</option>
                     <option value="IT">IT</option>
-                    <option value="Developers">Developers</option>
-                    <option value="MD & CEO">MD & CEO</option>
-                    <option value="Marketing">Marketing / Analysts</option>
-                    <option value="NPD">NPD</option>
-                    <option value="Purchasing">Purchasing</option>
-                    <option value="Quality">Quality</option>
-                    <option value="Resource Planning">Resource Planning</option>
-                    <option value="Social Media">Social Media</option>
-                    <option value="Technical">Technical</option>
-                    <option value="Test Department">Test Department</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Accounts">Accounts</option>
                 </select>
             </div>
 
