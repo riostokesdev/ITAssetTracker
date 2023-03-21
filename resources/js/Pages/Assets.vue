@@ -47,9 +47,7 @@ const props = defineProps({
                             <td class="px-6 py-4 font-medium text-gray-900">{{asset.fa_code}}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(asset.created_at).toLocaleString() }}</td>
                             <td class="px-6 py-4 font-medium text-gray-900">{{ new Date(asset.updated_at).toLocaleString() }}</td>
-                            <td class="px-6 py-4 font-medium text-gray-900 inline-flex gap-4">
-
-                            </td>
+                            
                         </tr>
                         </tbody>
                     </table>
