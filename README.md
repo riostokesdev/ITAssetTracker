@@ -7,11 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<<<<<<< HEAD
-<p><a href="https://stocktracker.riostokes.com">View The Project</a></p>
-=======
-<p><a href="www.stocktracker.riostokes.com">See The Stock Tracker Live Here</a></p>
->>>>>>> c10a379e43e128f61bbd676c422c40f16551dc9c
+
+<p><a href="https://www.stocktracker.riostokes.com">See The Stock Tracker Live Here</a></p>
+
 
 ## About Laravel
 
