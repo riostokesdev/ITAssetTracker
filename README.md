@@ -8,7 +8,7 @@
 </p>
 
 
-<p><a href="https://www.stocktracker.riostokes.com">See The Stock Tracker Live Here</a></p>
+<p><a href="https://stocktracker.riostokes.com">See The Stock Tracker Live Here</a></p>
 
 
 ## About Laravel
